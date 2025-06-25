@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 const Login = () => {
   
   const [showPassword, setShowPassword] = useState(false);
-  const [ token, setToken ] = useState(JSON.parse(localStorage.getItem("auth")) || "");
+  const [ token, setToken ] = useState(localStorage.getItem("auth") || "");
   const navigate = useNavigate();
 
 
