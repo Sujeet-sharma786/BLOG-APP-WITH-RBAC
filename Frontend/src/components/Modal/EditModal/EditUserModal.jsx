@@ -37,7 +37,7 @@ const EditUserModal = ({ userData, isOpen, onClose, onSave }) => {
     // }
     // toast("Successfully edited");
     console.log("user details : ",user.role,user.name,user.status)
-    const result = await fetch('http://localhost:5000/api/users/update-user',{
+    const result = await fetch('https://publish-story.onrender.com/api/users/update-user',{
       method:'POST',
       body:JSON.stringify({user}),
       headers:{
