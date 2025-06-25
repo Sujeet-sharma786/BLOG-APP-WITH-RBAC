@@ -32,7 +32,7 @@ const WriteBook = () => {
     },3000)
     
     try{
-      const response = await  fetch('http://localhost:5000/api/authors/book-store',{
+      const response = await  fetch('https://publish-story.onrender.com/api/authors/book-store',{
         method:"POST",
         body:JSON.stringify({pages}),
         headers:{

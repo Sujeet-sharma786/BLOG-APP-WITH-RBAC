@@ -27,7 +27,7 @@ const AddBlogs = () => {
     formData.append('image',image);
 
     try {
-      const res = await fetch('http://localhost:5000/api/blogs/post-blogs', {
+      const res = await fetch('https://publish-story.onrender.com/api/blogs/post-blogs', {
         method: 'POST',
         headers: {
       

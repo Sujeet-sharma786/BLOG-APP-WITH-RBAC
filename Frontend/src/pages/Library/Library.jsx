@@ -9,7 +9,7 @@ const Library = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/authors/list-books', {
+        const response = await fetch('https://publish-story.onrender.com/api/authors/list-books', {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('auth')}`
           }

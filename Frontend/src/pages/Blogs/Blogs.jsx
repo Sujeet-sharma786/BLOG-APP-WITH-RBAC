@@ -13,7 +13,7 @@ const Blogs = () => {
 
     const fetchBlogs = async () => {
         try {
-            const res = await fetch('http://localhost:5000/api/blogs/get-all-blogs', {
+            const res = await fetch('https://publish-story.onrender.com/api/blogs/get-all-blogs', {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('auth')}`
                 }
@@ -48,7 +48,7 @@ const Blogs = () => {
                             <div>
                                 {blog.image && (
                                     <img
-                                        src={`http://localhost:5000/${blog.image}`}
+                                        src={`https://publish-story.onrender.com/${blog.image}`}
                                         alt="Blog"
                                         className="w-full h-52 object-cover rounded-md mb-3"
                                     />
